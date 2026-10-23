@@ -1,6 +1,6 @@
 {
   "name": "@deepseek-ai/dsh-workbench",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "The DeepSeek Harness IDE workbench: Source control, Editor, Session trash, Turn deliverables, and Customizations in one plugin.",
   "license": "MIT",
   "type": "module",

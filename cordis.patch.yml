@@ -1,0 +1,33 @@
+# The workbench mounts the whole IDE surface from one row. The six feature
+# packages and the in-box rows they replaced are disabled here, so the same
+# surface is not registered twice.
+- insert:
+    - id: workbench
+      name: '@deepseek-ai/dsh-workbench'
+
+- id: git-panel
+  disabled: true
+- id: git-controller
+  disabled: true
+- id: ui-git
+  disabled: true
+
+- id: editor-panel
+  disabled: true
+- id: workspace-editor
+  disabled: true
+- id: ui-editor
+  disabled: true
+
+- id: session-manager
+  disabled: true
+
+- id: deliverables-minimal
+  disabled: true
+- id: ui-deliverables
+  disabled: true
+
+- id: customizations-panel
+  disabled: true
+- id: ui-settings-customizations
+  disabled: true

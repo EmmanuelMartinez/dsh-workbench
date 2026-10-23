@@ -1,0 +1,20 @@
+{
+  "name": "@deepseek-ai/dsh-workbench",
+  "version": "0.0.1",
+  "description": "The DeepSeek Harness IDE workbench: Source control, Editor, Session trash, Turn deliverables, and Customizations in one plugin.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./typert": { "default": "./lib/typert.host.js" },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  },
+  "files": ["lib/index.js", "lib/typert.host.js", "lib/client.js", "lib/client.js.map", "cordis.patch.yml", "README.md"],
+  "peerDependencies": { "@deepseek-ai/cordis": "*" }
+}

@@ -31,3 +31,6 @@
   disabled: true
 - id: ui-settings-customizations
   disabled: true
+
+- id: ui-sidebar-terminal
+  disabled: true

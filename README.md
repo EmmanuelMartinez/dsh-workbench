@@ -89,6 +89,29 @@ Because the workbench is a composed artifact, a change to any composed surface
 requires a new workbench release rather than a per-feature update. This is the
 deliberate trade for one install.
 
+
+## Reviewing the agent's changes
+
+- **Changed-files card** (each turn): **Reject all** reverts every file the turn
+  changed, **Accept all** dismisses the review, and each row has its own
+  **Reject** — the file goes back to its repository version.
+- **Editor Diff**: every hunk has **Reject**, and the comparison header carries
+  **Accept all** / **Reject all** for the whole file.
+- Both paths use the same revert routine, so an open buffer and a closed file
+  behave identically.
+
+## Terminal at the bottom
+
+**Cmd+J** opens a terminal and floats it above the editor column's bottom edge;
+it is the in-box terminal, so it keeps its full model (tabs, shells, reattach)
+and can be moved or resized like any floating pane.
+
+The layout also installs a `shell.bottom` slot in the centre column for a
+future fixed dock. A fixed dock needs a terminal client built against the
+running Desktop; the in-repo terminal client targets an older host build and is
+not compatible, so the workbench docks the in-box terminal instead of shipping
+a second copy.
+
 ## Known limitations
 
 - The five composed packages must be present on disk if you migrate from them;
